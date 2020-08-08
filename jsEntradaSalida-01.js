@@ -87,8 +87,8 @@ function mostrar() {
 		//	verificar que los datos  exitan antes de mostrarlos
 
 	}
-	alert("El nombre de la persona mas vieja es " + nombrevieja + " y su edad es " + edadmax);
-	alert("La altura promedio para las mujeres es de " + promedio);
-	alert("El nombre de la persona mas joven es " + nombrejoven + " y su edad es " + edadmin);
+	console.log("El nombre de la persona mas vieja es " + nombrevieja + " y su edad es " + edadmax);
+	console.log("La altura promedio para las mujeres es de " + promedio);
+	console.log("El nombre de la persona mas joven es " + nombrejoven + " y su edad es " + edadmin);
 }
 
