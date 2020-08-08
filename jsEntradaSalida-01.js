@@ -77,18 +77,21 @@ function mostrar() {
 			promedio = (acumulador / contadormujeres);
 		}
 		//	3- nombre de la mujer más joven
-		if (sexo == "f") {
-			if (edad < edadmin) {
-				edadmin = edad;
-				nombrejoven = nombre1;
-			}
-		}
-		//	NOTA:pedir datos por "prompt()" y mostrar por console.log(),
-		//	verificar que los datos  exitan antes de mostrarlos
+		switch (sexo) {
+			case "f":
 
+				if (edad < edadmin) {
+					edadmin = edad;
+					nombrejoven = nombre1;
+				} break;
+		}
 	}
-	console.log("El nombre de la persona mas vieja es " + nombrevieja + " y su edad es " + edadmax);
-	console.log("La altura promedio para las mujeres es de " + promedio);
-	console.log("El nombre de la persona mas joven es " + nombrejoven + " y su edad es " + edadmin);
+	//	NOTA:pedir datos por "prompt()" y mostrar por console.log(),
+	//	verificar que los datos  exitan antes de mostrarlos
+
+
+console.log("El nombre de la persona mas vieja es " + nombrevieja + " y su edad es " + edadmax);
+console.log("La altura promedio para las mujeres es de " + promedio);
+console.log("El nombre de la persona mas joven es " + nombrejoven + " y su edad es " + edadmin);
 }
 
